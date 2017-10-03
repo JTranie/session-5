@@ -3,4 +3,37 @@ body {
 }
 
 #fixed-block {
+	position: fixed;
+  /* Les propriétés top, bottom, right et left indiquent les distances entre les
+  bords de l'élément et les bords de la fenêtre.  */
+  top: 0;
+  left: 0;
+  right: 0;
 }
+
+#footnotes {
+	width: 100%;
+	 position: absolute;
+  /* Les propriétés top, bottom, right et left indiquent les distances entre les
+  bords de l'élément et l'élément l'englobant.  */
+  top: 100%;
+  left: 0px;
+}
+
+#with-offset {
+ position: relative;
+  /* Les propriétés top ou bottom indiquent le décalage vertical à appliquer
+    et left ou right indiquent le décalage horizontal.  */
+  bottom: 5px;	
+}
+
+#floating-square {
+	width: 150px;
+	height: 150px;
+	max-width: 20%;
+	/* L'élément va flotter à gauche */
+  float: left;
+  /* Avec un peut de marge sur les côtés pour plus de lisibilité */
+  margin-right:5px;
+  margin-bottom:5px;
+  }
